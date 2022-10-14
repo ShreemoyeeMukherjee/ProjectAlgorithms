@@ -6,6 +6,15 @@ The encoded string should be as compact as possible.
 
  Input: root = [2,1,3]
 Output: [2,1,3]
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
 class Codec {
 public:
 
@@ -86,5 +95,10 @@ public:
         return(m);
     }
 };
-          
-   
+            
+            
+// Codec* ser = new Codec();
+// Codec* deser = new Codec();
+// string tree = ser->serialize(root);
+// TreeNode* ans = deser->deserialize(tree);
+// return ans;
